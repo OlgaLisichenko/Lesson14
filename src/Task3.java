@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Task3 {
 
-    public static MyInterface stringReverse(Scanner scanner, String s) {
-        System.out.println("Task 3: enter 1 to reverse " + s);
-        if (scanner.next().equals("1")) {
-            return str -> new StringBuilder(str).reverse().toString();
+    public static String stringReverse(Scanner scanner, String str) {
+        System.out.println("Task 3: enter 1 to reverse " + str);
+        if (scanner.nextLine().equals("1")) {
+            StringFunction stringFunction = s -> new StringBuilder(str).reverse().toString();
+            return stringFunction.apply(str);
         }
-        return str -> str;
+        return str;
     }
 }

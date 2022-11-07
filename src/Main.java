@@ -20,8 +20,8 @@ public class Main {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("This day is " + getDayOfWeek(scanner));
             System.out.println("Task 2: next Tuesday will be " + getDateOfNextTuesday());
-            String str = "A B C D";
-            System.out.println(Task3.stringReverse(scanner, str).method(str));
+            String stringForReverse = "A B C D";
+            System.out.println(Task3.stringReverse(scanner, stringForReverse));
         }
     }
 
